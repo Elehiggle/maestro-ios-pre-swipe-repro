@@ -1,0 +1,211 @@
+{
+  "measuredOn": "2026-10-14",
+  "stockMaestro": "2.11.0",
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 15,
+      "sha256": "2353a7dce4a5211682208c1164a35ee44203545d3d78d10c35f3c04864a9fdcf"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2024,
+      "sha256": "81b9bcf3dd9c5961609776bf1565a67f81752661e9cc7a9985f4d2659ccbad9b"
+    },
+    {
+      "file": "RESULTS.md",
+      "bytes": 3190,
+      "sha256": "55ab7bb88c2a328b416b999e45fc1f3b1a4b40fdcad404e191d8e1dedff0e733"
+    },
+    {
+      "file": "build.py",
+      "bytes": 2209,
+      "sha256": "f5a0a0321234110fff82220f5404983b3a07d0ec4bbf9e2ecfbe45e1db74bf34"
+    },
+    {
+      "file": "evidence/REDACTION.md",
+      "bytes": 633,
+      "sha256": "d54139b8add487f93558cfdd2ac405615161620332633459494afa5ec2758dd6"
+    },
+    {
+      "file": "evidence/bare/app-events.jsonl",
+      "bytes": 954,
+      "sha256": "1cb50b5902cc50f3d230956777560b10873bd8ceab7f15b6e529f6f335046ecc"
+    },
+    {
+      "file": "evidence/bare/capture-receipt.json",
+      "bytes": 1349,
+      "sha256": "b7506b3d0cd368b9d8cd1e8d247c43589ae233713545a636b6b67986da0dff69"
+    },
+    {
+      "file": "evidence/bare/final-screen.png",
+      "bytes": 164300,
+      "sha256": "9236f349c4118621b8e4d4d1cda6a34ef6c2d08048b2d29ebd5136fadd434cbc"
+    },
+    {
+      "file": "evidence/bare/install.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "evidence/bare/junit.xml",
+      "bytes": 392,
+      "sha256": "92f6c24e94b526f1ab62aaeadb49082f72cb40ae87108a1857b4fc9e5fdcf9f3"
+    },
+    {
+      "file": "evidence/bare/maestro.log",
+      "bytes": 17654,
+      "sha256": "e2b6d01c336e90f8181851ddbf2535c9f061af80f729bfd53a6607ca0f30de28"
+    },
+    {
+      "file": "evidence/bare/native-stream.log",
+      "bytes": 590911,
+      "sha256": "d30350a051d9ca2bf3eae5f67b42802297f3156fd866f1427d801e8f2f0c94bb"
+    },
+    {
+      "file": "evidence/bare/run-receipt.json",
+      "bytes": 2931,
+      "sha256": "7ac36809f2450b7f563576e93093ebbfd4c94ca65a8061bb3e7c41fc8f37eab1"
+    },
+    {
+      "file": "evidence/bare/wrapper-console.log",
+      "bytes": 2972,
+      "sha256": "116a2cc4bdb58e87a98e1e03d008f1836cee45ae9e16b8008cc5015cd63a85d1"
+    },
+    {
+      "file": "evidence/build-compiler.log",
+      "bytes": 190,
+      "sha256": "95de75637d14e6fd8e25047f82638191f566eb7ef12f6e6bcaae4cd0fb859109"
+    },
+    {
+      "file": "evidence/build-console.log",
+      "bytes": 1007,
+      "sha256": "692e9d85f86a60c98b5f75a0d2206c7a29c76ac5ef359cde76e86fc13a9902e6"
+    },
+    {
+      "file": "evidence/build-receipt.json",
+      "bytes": 1007,
+      "sha256": "692e9d85f86a60c98b5f75a0d2206c7a29c76ac5ef359cde76e86fc13a9902e6"
+    },
+    {
+      "file": "evidence/initial-screen.png",
+      "bytes": 63077,
+      "sha256": "92cd3fbe30f7f9d4132f45786bf3cdbce9505bb4276ee67e783da9ce132d005a"
+    },
+    {
+      "file": "evidence/moving/app-events.jsonl",
+      "bytes": 2235,
+      "sha256": "80d4676c0e168aa1586e97bc2ae547b166ede197402d0d53ea9436e28ea5ade8"
+    },
+    {
+      "file": "evidence/moving/capture-receipt.json",
+      "bytes": 1351,
+      "sha256": "f8f6c768df5df48388a1dd2b00b713574f641cfba9b40fc497c7dbf31548ba0a"
+    },
+    {
+      "file": "evidence/moving/final-screen.png",
+      "bytes": 165619,
+      "sha256": "99465b02eed03a424fd51f1c15d7075cdebdd71f00f3ace43e4358e5c62336e5"
+    },
+    {
+      "file": "evidence/moving/install.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "evidence/moving/junit.xml",
+      "bytes": 403,
+      "sha256": "cded199d53f29970e655cd760541af4bba76bfde00a5a7cb4fad9ed2d6e7a78b"
+    },
+    {
+      "file": "evidence/moving/maestro.log",
+      "bytes": 46169,
+      "sha256": "89d19a63ebde39c329304e8fb54b8dab5d6a187a35f26370a3790485a4e17528"
+    },
+    {
+      "file": "evidence/moving/native-stream.log",
+      "bytes": 906616,
+      "sha256": "8e58062541618fcfdd847a9a8c42e82ca5546d52a5d11bfb53bf6faa73ba05cd"
+    },
+    {
+      "file": "evidence/moving/run-receipt.json",
+      "bytes": 2947,
+      "sha256": "3d7ff3110a994e8e327dbc7013a224492f96b508d98ee1b98402c496ae5582ec"
+    },
+    {
+      "file": "evidence/moving/wrapper-console.log",
+      "bytes": 2990,
+      "sha256": "44ecc5521c250ada5726fc9524fe9f79182ee9d26061ed153127ea16c0883c47"
+    },
+    {
+      "file": "evidence/redaction-receipt.json",
+      "bytes": 9455,
+      "sha256": "2666c89edcce4b598358563a8e64ac8edacccb696cba02c9413d34899a53723e"
+    },
+    {
+      "file": "evidence/release/official-checksums_sha256.txt",
+      "bytes": 78,
+      "sha256": "8960cb334181dc971065eac0589bb471cf246997c71a6f6acc5dccb0a2c31b14"
+    },
+    {
+      "file": "evidence/release/official-native-receipt.json",
+      "bytes": 635,
+      "sha256": "f00242324ee9abfca0be72f7ac374da0b3d1664ef4d992ea4d2e535901216de6"
+    },
+    {
+      "file": "evidence/release/official-release-api.json",
+      "bytes": 6579,
+      "sha256": "4cf3900642c3e28db8eaf2dfd4a0ce023465bb112c68f704d7d960018d08ad38"
+    },
+    {
+      "file": "evidence/release/official-release-receipt.json",
+      "bytes": 1801,
+      "sha256": "91fb5e27231df54999e371d58d9d258e500f393f9cee81147f6080db17b5e9ad"
+    },
+    {
+      "file": "evidence/release/source-receipt.json",
+      "bytes": 662,
+      "sha256": "02bf04a7450aa86c597aa0209921a241ae2f9b6c50fe12cb603841c4881c6689"
+    },
+    {
+      "file": "evidence/session.json",
+      "bytes": 4532,
+      "sha256": "7907ff92cc61dcb72a6679006d4c9fe9fa7e5e336c5a6be025721033ceec3603"
+    },
+    {
+      "file": "evidence/summary.json",
+      "bytes": 10695,
+      "sha256": "741df79e1e7ab01b6d3ecef346b1858e16d517d3b7c78a9faef6b072a885ebd8"
+    },
+    {
+      "file": "flows/bare.yaml",
+      "bytes": 356,
+      "sha256": "b738a3111155c525e44b65cffd1e14ba0dda9db205db4854eea299faad8cf561"
+    },
+    {
+      "file": "flows/moving.yaml",
+      "bytes": 358,
+      "sha256": "10739a475fe21ccf98a52fa1a03288ce9c50e9ab760b411c2b843da2ebd4d4e9"
+    },
+    {
+      "file": "issue.md",
+      "bytes": 3289,
+      "sha256": "52ed9259c13fac6abf7add0dd6199bc16b21def33ee8d1bad319104d0d6c57f1"
+    },
+    {
+      "file": "run.py",
+      "bytes": 7119,
+      "sha256": "4e66a1e6aed2161825a340a45eccdf1e38b94a0334c6c5d7617a55994ec0ec1d"
+    },
+    {
+      "file": "source/Info.plist",
+      "bytes": 1028,
+      "sha256": "976c9c52b1cfe174342aba4d8e19ffec75bc82fa719da393511c3a64ec3538a7"
+    },
+    {
+      "file": "source/main.swift",
+      "bytes": 5944,
+      "sha256": "e21aede7f461add83d3a15016c3ff041a65b97a9c03e8aadf8f63e87670bc866"
+    }
+  ]
+}

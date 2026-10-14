@@ -1,0 +1,35 @@
+{
+  "retrievedAtUTC": "2026-10-14T18:53:41.876261+00:00",
+  "releaseApiURL": "https://api.github.com/repos/mobile-dev-inc/Maestro/releases/tags/cli-2.11.0",
+  "releaseId": 399183579,
+  "tag": "cli-2.11.0",
+  "publishedAt": "2026-09-29T13:36:34Z",
+  "apiMetadataSha256": "4cf3900642c3e28db8eaf2dfd4a0ce023465bb112c68f704d7d960018d08ad38",
+  "assets": [
+    {
+      "name": "checksums_sha256.txt",
+      "assetId": 598310640,
+      "url": "https://github.com/mobile-dev-inc/Maestro/releases/download/cli-2.11.0/checksums_sha256.txt",
+      "bytes": 78,
+      "sha256": "8960cb334181dc971065eac0589bb471cf246997c71a6f6acc5dccb0a2c31b14",
+      "officialApiDigest": "sha256:8960cb334181dc971065eac0589bb471cf246997c71a6f6acc5dccb0a2c31b14"
+    },
+    {
+      "name": "maestro.zip",
+      "assetId": 598310672,
+      "url": "https://github.com/mobile-dev-inc/Maestro/releases/download/cli-2.11.0/maestro.zip",
+      "bytes": 314886578,
+      "sha256": "5384593cb4e7a106489e75a821d157dd43f4e438df6bc308b72e82c685e1283a",
+      "officialApiDigest": "sha256:5384593cb4e7a106489e75a821d157dd43f4e438df6bc308b72e82c685e1283a"
+    }
+  ],
+  "verifiedOfficialChecksum": true,
+  "isolatedCliRelativePath": "tooling/official/maestro/bin/maestro",
+  "testedJarHashes": {
+    "maestro-client.jar": "7c07b0625f44f10a1c1dc8657f7d498cca316677444b7fd9a5f45668cfb69f5b",
+    "maestro-ios-driver.jar": "5316a3f28d2d50319138f9e2f46bbc817b8fc0e328aa7277ed50375ad291c34e",
+    "maestro-cli-2.11.0.jar": "661c184c1d5c9a4fd84dd9fb4f360247edb5782ff8b7ab4e5b6844ae1cbc00ce"
+  },
+  "cliWasExecuted": false,
+  "meaning": "Downloaded official release archive, checked GitHub API asset digests and official checksum file, extracted without changing the global CLI. Tested runtime hashes still need comparison after the measurement."
+}

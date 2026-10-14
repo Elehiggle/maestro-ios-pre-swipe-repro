@@ -1,0 +1,10 @@
+{
+  "officialJarSha256": "5316a3f28d2d50319138f9e2f46bbc817b8fc0e328aa7277ed50375ad291c34e",
+  "archiveEntry": "driver-iPhoneSimulator/Debug-iphonesimulator/maestro-driver-iosUITests-Runner.zip",
+  "nestedArchiveSha256": "8aede7235a3b353b3e6b97ecb0be43bbccfec122a3e71026bbe0924a80d8656d",
+  "bundleId": "dev.mobile.maestro-driver-iosUITests.xctrunner",
+  "executableName": "maestro-driver-iosUITests-Runner",
+  "executableZipPath": "maestro-driver-iosUITests-Runner.app/maestro-driver-iosUITests-Runner",
+  "executableSha256": "be0619b1e43124ef40de6d42b8149ecb503be2fffda08f13323efbac3e65c597",
+  "verifiedAgainstLiveRuntime": false
+}

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="Maestro Pre-swipe Repro 20261014 - iOS 27.1 - <SIMULATOR_UUID>" tests="1" failures="0" time="7.939" timestamp="2026-10-14T21:04:02">
+    <testcase id="bare" name="bare" classname="bare" file="flows/bare.yaml" time="7.93" timestamp="2026-10-14T21:04:02" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

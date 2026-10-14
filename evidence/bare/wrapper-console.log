@@ -1,0 +1,89 @@
+Results: <REPRO_ROOT>/logs/bare-ld6xzw7d
+{
+  "command": [
+    "<MAESTRO_2_11_0_ROOT>/bin/maestro",
+    "--verbose",
+    "--udid",
+    "<SIMULATOR_UUID>",
+    "--driver-host-port",
+    "23147",
+    "test",
+    "--no-ansi",
+    "--format",
+    "JUNIT",
+    "--output",
+    "<REPRO_ROOT>/logs/bare-ld6xzw7d/junit.xml",
+    "--debug-output",
+    "<REPRO_ROOT>/logs/bare-ld6xzw7d/debug",
+    "<REPRO_ROOT>/flows/bare.yaml"
+  ],
+  "appId": "dev.maestro.swipewaitfixture",
+  "device": {
+    "dataPath": "<USER_HOME>/Library/Developer/CoreSimulator/Devices/<SIMULATOR_UUID>/data",
+    "dataPathSize": 781205504,
+    "logPath": "<USER_HOME>/Library/Logs/CoreSimulator/<SIMULATOR_UUID>",
+    "udid": "<SIMULATOR_UUID>",
+    "lastUsedAt": "2026-10-14T19:02:39Z",
+    "isAvailable": true,
+    "logPathSize": 176128,
+    "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-Duo",
+    "state": "Booted",
+    "name": "Maestro Pre-swipe Repro 20261014"
+  },
+  "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-27-1",
+  "maestroVersion": "2.11.0",
+  "maestroExecutable": "<MAESTRO_2_11_0_ROOT>/bin/maestro",
+  "host": {
+    "system": "Darwin",
+    "release": "27.0.0",
+    "machine": "arm64",
+    "macOS": "27.0.1"
+  },
+  "buildReceipt": {
+    "command": [
+      "xcrun",
+      "swiftc",
+      "-sdk",
+      "/Applications/Xcode-27.1-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk",
+      "-target",
+      "arm64-apple-ios15.0-simulator",
+      "-module-cache-path",
+      "<REPRO_ROOT>/build/ModuleCache",
+      "<REPRO_ROOT>/source/main.swift",
+      "-o",
+      "<REPRO_ROOT>/build/SwipeWaitFixture.app/SwipeWaitFixture"
+    ],
+    "sdk": "/Applications/Xcode-27.1-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk",
+    "developerDirectory": "/Applications/Xcode-27.1-beta.app/Contents/Developer",
+    "startWall": 1792004599.438485,
+    "endWall": 1792004611.137283,
+    "exitCode": 0,
+    "error": null,
+    "sourceSha256": "e21aede7f461add83d3a15016c3ff041a65b97a9c03e8aadf8f63e87670bc866",
+    "infoPlistSha256": "976c9c52b1cfe174342aba4d8e19ffec75bc82fa719da393511c3a64ec3538a7",
+    "executableSha256": "68ec54091f005f370e4f9e281eb26f339b4c311fe986e3caff16e96b8d9e3998"
+  },
+  "mode": "bare",
+  "port": 23147,
+  "watchdogSeconds": 180,
+  "javaHome": "<JAVA_USER_CACHE_BARE>",
+  "flowSha256": "b738a3111155c525e44b65cffd1e14ba0dda9db205db4854eea299faad8cf561",
+  "hostLoadBefore": [
+    331.51953125,
+    191.5126953125,
+    117.11376953125
+  ],
+  "startWall": 1792004617.345829,
+  "cliArtifactHashes": {
+    "maestro-client.jar": "7c07b0625f44f10a1c1dc8657f7d498cca316677444b7fd9a5f45668cfb69f5b",
+    "maestro-ios-driver.jar": "5316a3f28d2d50319138f9e2f46bbc817b8fc0e328aa7277ed50375ad291c34e"
+  },
+  "timedOut": false,
+  "exitCode": 0,
+  "endWall": 1792004651.783326,
+  "hostLoadAfter": [
+    460.5546875,
+    238.54736328125,
+    137.2119140625
+  ]
+}

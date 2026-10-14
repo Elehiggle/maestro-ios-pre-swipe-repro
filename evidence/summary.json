@@ -1,0 +1,306 @@
+{
+  "derivedAtUTC": "2026-10-14T19:08:55.714721+00:00",
+  "localLogTimezone": "Europe/Berlin",
+  "timeComparisonScope": "Observed request timings on this host/runtime; query counts and dispatch events are primary.",
+  "results": [
+    {
+      "mode": "bare",
+      "deviceInfo": [
+        1398,
+        2034,
+        466,
+        678
+      ],
+      "screenshotPixels": [
+        1398,
+        2034
+      ],
+      "exitCode": 0,
+      "timedOut": false,
+      "watchdogSeconds": 180,
+      "swipeCommandStartWall": 1792004647.75,
+      "swipeCommandStartMaestroLine": 103,
+      "swipeCommandFinishedWall": 1792004649.347,
+      "nativeSwipeRequest": {
+        "wall": 1792004647.983,
+        "line": 2106,
+        "path": "swipeV2"
+      },
+      "preDispatchSeconds": 0.2330000400543213,
+      "preStaticRequests": 1,
+      "preHierarchyRequests": 0,
+      "completedPreHierarchies": 0,
+      "hierarchies": [],
+      "completedHierarchySeconds": 0,
+      "completedStatusBarSeconds": 0,
+      "lowerBoundWitness": null,
+      "observedPreDispatchLowerBoundSeconds": null,
+      "lowerBoundDefinition": "Settling request (isScreenStatic or viewHierarchy) received after swipe command start, with no native swipe request at or before it; does not use teardown completion time or cleanup requests.",
+      "touches": [
+        {
+          "dispatchLagMs": 13.952583334685187,
+          "event": "touchBegan",
+          "wall": 1792004648.169189,
+          "uptime": 15430.20235225,
+          "eventUptime": 15430.188391958332
+        }
+      ],
+      "scrolledEvents": [
+        {
+          "offset": 10.666666666666666,
+          "uptime": 15430.300841666667,
+          "wall": 1792004648.267679,
+          "event": "scrolled"
+        }
+      ],
+      "fixtureReadyModes": [
+        "bare"
+      ],
+      "hostLoadBefore": [
+        331.51953125,
+        191.5126953125,
+        117.11376953125
+      ],
+      "hostLoadAfter": [
+        460.5546875,
+        238.54736328125,
+        137.2119140625
+      ],
+      "javaSystemInfo": [
+        "21:03:46.878 [ INFO] MAESTRO.logSystemInfo: Java Version: 17"
+      ],
+      "animationSettingLines": [
+        "21:03:50.214 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device <SIMULATOR_UUID> using port 23147 with execution plan ExecutionPlan(flowsToRun=[<REPRO_ROOT>/flows/bare.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))"
+      ],
+      "junit": {
+        "suite": {
+          "name": "Test Suite",
+          "device": "Maestro Pre-swipe Repro 20261014 - iOS 27.1 - <SIMULATOR_UUID>",
+          "tests": "1",
+          "failures": "0",
+          "time": "7.939",
+          "timestamp": "2026-10-14T21:04:02"
+        },
+        "testcase": {
+          "id": "bare",
+          "name": "bare",
+          "classname": "bare",
+          "file": "flows/bare.yaml",
+          "time": "7.93",
+          "timestamp": "2026-10-14T21:04:02",
+          "status": "SUCCESS"
+        },
+        "failureElements": 0,
+        "errorElements": 0
+      },
+      "captureReceipt": "bare/capture-receipt.json",
+      "nativeLogSha256": "82260d3e7db04b49e95f4033d32f0a6170a91e6d3947ffdc8d78d3aa16625aeb",
+      "maestroLogSha256": "036af2cf86dda1d50d19323f2af55a8b0312c4df19b020a66ec9142d3127e40d"
+    },
+    {
+      "mode": "moving",
+      "deviceInfo": [
+        1398,
+        2034,
+        466,
+        678
+      ],
+      "screenshotPixels": [
+        1398,
+        2034
+      ],
+      "exitCode": 0,
+      "timedOut": false,
+      "watchdogSeconds": 180,
+      "swipeCommandStartWall": 1792004717.539,
+      "swipeCommandStartMaestroLine": 253,
+      "swipeCommandFinishedWall": 1792004730.426,
+      "nativeSwipeRequest": {
+        "wall": 1792004725.588,
+        "line": 3051,
+        "path": "swipeV2"
+      },
+      "preDispatchSeconds": 8.049000024795532,
+      "preStaticRequests": 19,
+      "preHierarchyRequests": 11,
+      "completedPreHierarchies": 11,
+      "hierarchies": [
+        {
+          "requestWall": 1792004720.743,
+          "requestLine": 2269,
+          "complete": true,
+          "statusStartWall": 1792004720.767,
+          "statusSeconds": 0.1597670316696167,
+          "doneWall": 1792004720.956,
+          "doneLine": 2330,
+          "nativeSeconds": 0.21300005912780762
+        },
+        {
+          "requestWall": 1792004720.975,
+          "requestLine": 2341,
+          "complete": true,
+          "statusStartWall": 1792004721.0,
+          "statusSeconds": 0.16249299049377441,
+          "doneWall": 1792004721.192,
+          "doneLine": 2402,
+          "nativeSeconds": 0.21700000762939453
+        },
+        {
+          "requestWall": 1792004721.423,
+          "requestLine": 2413,
+          "complete": true,
+          "statusStartWall": 1792004721.455,
+          "statusSeconds": 0.16367900371551514,
+          "doneWall": 1792004721.648,
+          "doneLine": 2474,
+          "nativeSeconds": 0.22499990463256836
+        },
+        {
+          "requestWall": 1792004721.877,
+          "requestLine": 2485,
+          "complete": true,
+          "statusStartWall": 1792004721.91,
+          "statusSeconds": 0.1680610179901123,
+          "doneWall": 1792004722.108,
+          "doneLine": 2546,
+          "nativeSeconds": 0.23099994659423828
+        },
+        {
+          "requestWall": 1792004722.341,
+          "requestLine": 2557,
+          "complete": true,
+          "statusStartWall": 1792004722.372,
+          "statusSeconds": 0.16299700736999512,
+          "doneWall": 1792004722.564,
+          "doneLine": 2618,
+          "nativeSeconds": 0.22299981117248535
+        },
+        {
+          "requestWall": 1792004722.801,
+          "requestLine": 2629,
+          "complete": true,
+          "statusStartWall": 1792004722.831,
+          "statusSeconds": 0.16051602363586426,
+          "doneWall": 1792004723.021,
+          "doneLine": 2690,
+          "nativeSeconds": 0.2199997901916504
+        },
+        {
+          "requestWall": 1792004723.269,
+          "requestLine": 2701,
+          "complete": true,
+          "statusStartWall": 1792004723.302,
+          "statusSeconds": 0.16025710105895996,
+          "doneWall": 1792004723.492,
+          "doneLine": 2762,
+          "nativeSeconds": 0.22300004959106445
+        },
+        {
+          "requestWall": 1792004723.735,
+          "requestLine": 2773,
+          "complete": true,
+          "statusStartWall": 1792004723.768,
+          "statusSeconds": 0.1598670482635498,
+          "doneWall": 1792004723.958,
+          "doneLine": 2834,
+          "nativeSeconds": 0.22300004959106445
+        },
+        {
+          "requestWall": 1792004724.2,
+          "requestLine": 2845,
+          "complete": true,
+          "statusStartWall": 1792004724.232,
+          "statusSeconds": 0.15984892845153809,
+          "doneWall": 1792004724.421,
+          "doneLine": 2906,
+          "nativeSeconds": 0.22099995613098145
+        },
+        {
+          "requestWall": 1792004724.667,
+          "requestLine": 2917,
+          "complete": true,
+          "statusStartWall": 1792004724.701,
+          "statusSeconds": 0.16067492961883545,
+          "doneWall": 1792004724.891,
+          "doneLine": 2978,
+          "nativeSeconds": 0.2239999771118164
+        },
+        {
+          "requestWall": 1792004725.125,
+          "requestLine": 2989,
+          "complete": true,
+          "statusStartWall": 1792004725.16,
+          "statusSeconds": 0.1632840633392334,
+          "doneWall": 1792004725.352,
+          "doneLine": 3050,
+          "nativeSeconds": 0.22699999809265137
+        }
+      ],
+      "completedHierarchySeconds": 2.4469995498657227,
+      "completedStatusBarSeconds": 1.7814451456069946,
+      "lowerBoundWitness": null,
+      "observedPreDispatchLowerBoundSeconds": null,
+      "lowerBoundDefinition": "Settling request (isScreenStatic or viewHierarchy) received after swipe command start, with no native swipe request at or before it; does not use teardown completion time or cleanup requests.",
+      "touches": [
+        {
+          "dispatchLagMs": 14.387333334525465,
+          "event": "touchBegan",
+          "wall": 1792004725.6696138,
+          "uptime": 15507.702275166668,
+          "eventUptime": 15507.687877791666
+        }
+      ],
+      "scrolledEvents": [
+        {
+          "event": "scrolled",
+          "wall": 1792004725.768146,
+          "offset": 10.666666666666666,
+          "uptime": 15507.800806958334
+        }
+      ],
+      "fixtureReadyModes": [
+        "moving"
+      ],
+      "hostLoadBefore": [
+        476.52587890625,
+        245.5439453125,
+        140.27490234375
+      ],
+      "hostLoadAfter": [
+        529.00390625,
+        315.96435546875,
+        176.10400390625
+      ],
+      "javaSystemInfo": [
+        "21:04:18.412 [ INFO] MAESTRO.logSystemInfo: Java Version: 17"
+      ],
+      "animationSettingLines": [
+        "21:04:21.566 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device <SIMULATOR_UUID> using port 23148 with execution plan ExecutionPlan(flowsToRun=[<REPRO_ROOT>/flows/moving.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))"
+      ],
+      "junit": {
+        "suite": {
+          "name": "Test Suite",
+          "device": "Maestro Pre-swipe Repro 20261014 - iOS 27.1 - <SIMULATOR_UUID>",
+          "tests": "1",
+          "failures": "0",
+          "time": "19.251",
+          "timestamp": "2026-10-14T21:05:11"
+        },
+        "testcase": {
+          "id": "moving",
+          "name": "moving",
+          "classname": "moving",
+          "file": "flows/moving.yaml",
+          "time": "19.243",
+          "timestamp": "2026-10-14T21:05:11",
+          "status": "SUCCESS"
+        },
+        "failureElements": 0,
+        "errorElements": 0
+      },
+      "captureReceipt": "moving/capture-receipt.json",
+      "nativeLogSha256": "41b051aa621b561337edf72c76da7e25646055db5963db3941066f24d9d7c110",
+      "maestroLogSha256": "54d0305f8c78a8da16c8451007ffc8153dba08a15bf749ff0e31c4cb98ae63fd"
+    }
+  ]
+}

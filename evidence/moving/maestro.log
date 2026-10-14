@@ -1,0 +1,262 @@
+21:04:18.409 [ INFO] maestro.cli.report.TestDebugReporter.logSystemInfo: Debug output path: <REPRO_ROOT>/logs/moving-odk6532v/debug/.maestro/tests/2026-10-14_210418
+21:04:18.410 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+21:04:18.411 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 2.11.0
+21:04:18.411 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+21:04:18.411 [ INFO] MAESTRO.logSystemInfo: OS Name: Mac OS X
+21:04:18.411 [ INFO] MAESTRO.logSystemInfo: OS Version: 27.0.1
+21:04:18.411 [ INFO] MAESTRO.logSystemInfo: Architecture: aarch64
+21:04:18.412 [ INFO] MAESTRO.logSystemInfo: Java Version: 17
+21:04:18.482 [ INFO] MAESTRO.logSystemInfo: Xcode Version: 27.1
+21:04:18.486 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+21:04:18.490 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+21:04:18.490 [ INFO] MAESTRO.logSystemInfo: ---------------------
+21:04:18.621 [DEBUG] io.micrometer.common.util.internal.logging.InternalLoggerFactory.newDefaultFactory: Using SLF4J as the default logging framework
+21:04:21.566 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device <SIMULATOR_UUID> using port 23148 with execution plan ExecutionPlan(flowsToRun=[<REPRO_ROOT>/flows/moving.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))
+21:04:22.643 [TRACE] ios.xctest.XCTestIOSDevice.open: Opening a connection
+21:04:22.643 [TRACE] xcuitest.XCTestDriverClient.restartXCTestRunner: Restarting XCTest Runner (uninstalling, installing and starting)
+21:04:22.643 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:22.645 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:22.645 [TRACE] xcuitest.XCTestDriverClient.restartXCTestRunner: XCTest Runner uninstalled, will install and start it
+21:04:22.646 [ INFO] xcuitest.installer.LocalXCTestInstaller.start$lambda$3: start()
+21:04:22.646 [ INFO] xcuitest.installer.LocalXCTestInstaller.start$lambda$3: [Start] Install XCUITest runner on <SIMULATOR_UUID>
+21:04:22.646 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:22.646 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:22.646 [ INFO] xcuitest.installer.IOSBuildProductsExtractor.extract: [Start] Writing build products
+21:04:22.681 [ INFO] xcuitest.installer.IOSBuildProductsExtractor.extract: [Done] Writing build products
+21:04:22.681 [ INFO] xcuitest.installer.IOSBuildProductsExtractor.extract: [Start] Writing maestro-driver-iosUITests-Runner app
+21:04:22.844 [ INFO] xcuitest.installer.IOSBuildProductsExtractor.extract: [Done] Writing maestro-driver-iosUITests-Runner app
+21:04:22.844 [ INFO] xcuitest.installer.IOSBuildProductsExtractor.extract: [Start] Writing maestro-driver-ios app
+21:04:22.851 [ INFO] xcuitest.installer.IOSBuildProductsExtractor.extract: [Done] Writing maestro-driver-ios app
+21:04:22.851 [ INFO] xcuitest.installer.LocalXCTestInstaller.startXCTestRunner: Installing driver with xcodebuild
+21:04:22.853 [ INFO] xcuitest.installer.LocalXCTestInstaller.startXCTestRunner: [Start] Running XcUITest with `xcodebuild test-without-building` with 23148 and config: IOSDriverConfig(prebuiltRunner=false, sourceDirectory=driver-iPhoneSimulator, context=CLI, snapshotKeyHonorModalViews=null)
+21:04:22.854 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [xcodebuild, test-without-building, -xctestrun, /var/folders/8l/flfpv6q93w10tym_qdb0b0t00000gn/T/<SIMULATOR_UUID>3460467327367212110/maestro-driver-ios-config.xctestrun, -destination, id=<SIMULATOR_UUID>, -derivedDataPath, /var/folders/8l/flfpv6q93w10tym_qdb0b0t00000gn/T/maestro_xctestrunner_xcodebuild_output6947703249997732047] with {TEST_RUNNER_PORT=23148}
+21:04:22.859 [ INFO] xcuitest.installer.LocalXCTestInstaller.startXCTestRunner: [Done] Running XcUITest with `xcodebuild test-without-building`
+21:04:22.859 [ INFO] xcuitest.installer.LocalXCTestInstaller.start$lambda$3: [Done] Install XCUITest runner on <SIMULATOR_UUID>
+21:04:22.859 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:22.860 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:23.371 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:23.371 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:23.882 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:23.883 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:24.390 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:24.392 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:24.899 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:24.900 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:25.406 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:25.408 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:25.917 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:25.918 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:26.419 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:26.420 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:26.930 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:26.931 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:27.435 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:27.437 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:27.944 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:27.946 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:28.455 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:28.456 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:28.967 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:28.969 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:29.479 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:29.480 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:29.991 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:29.993 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:30.504 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:30.516 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:31.025 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:31.028 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:31.536 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:31.538 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:32.050 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:32.051 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:32.555 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:32.555 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:33.057 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:33.059 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:33.568 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:33.570 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:34.081 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:34.083 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:34.586 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:34.587 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:35.098 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:35.101 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:35.611 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:35.614 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:36.123 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:36.124 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:36.635 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:36.638 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:37.150 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:37.153 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:37.664 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:37.666 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:38.174 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:38.175 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:38.686 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:38.692 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:39.202 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:39.203 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:39.713 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:39.715 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:40.222 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:40.223 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:40.733 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:40.733 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:41.244 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:41.244 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:41.755 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:41.757 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:42.265 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:42.268 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:42.771 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:42.775 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:43.287 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:43.291 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:43.802 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:43.804 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:44.315 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:44.319 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:44.831 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:44.832 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:45.336 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:45.340 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:45.851 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:45.852 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:46.362 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:46.363 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:46.874 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:46.875 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:47.378 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:47.382 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:47.893 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:47.893 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:48.405 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:48.409 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:48.920 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:48.923 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:49.436 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:49.442 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:49.954 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:49.959 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:50.471 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:50.476 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:50.984 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:50.985 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:51.497 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:51.502 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:52.013 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:52.016 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:52.529 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:52.535 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:53.041 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:53.045 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:53.553 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:53.555 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:54.064 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:54.066 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:54.574 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:54.575 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:55.077 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:55.082 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:55.585 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:55.586 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:56.097 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:56.098 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:56.607 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:56.611 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:57.121 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:57.122 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:57.635 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:57.638 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:58.151 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:58.155 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:58.666 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:58.667 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:59.178 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:59.179 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:04:59.686 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:04:59.690 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:00.200 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:00.202 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:00.714 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:00.719 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:01.229 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:01.230 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:01.742 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:01.747 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:02.258 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:02.258 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:02.769 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:02.771 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:03.277 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:03.278 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:03.783 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:03.787 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:04.298 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:04.300 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:04.806 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:04.806 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:05.314 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:05.315 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:05.819 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:05.820 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:06.326 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:06.327 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:06.833 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:06.835 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:07.348 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:07.349 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:07.860 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:07.862 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:08.373 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:08.375 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:08.885 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:08.888 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:09.399 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:09.402 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:09.911 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:09.913 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:10.422 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:10.423 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:10.934 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:10.935 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:11.442 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:11.443 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on <SIMULATOR_UUID>, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:23148
+21:05:11.943 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:11.969 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Done] Perform XCUITest driver status check on <SIMULATOR_UUID>
+21:05:11.993 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow:  Running flow moving
+21:05:12.000 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Getting device info
+21:05:12.175 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Got device info: DeviceInfo(platform=IOS, widthPixels=1398, heightPixels=2034, widthGrid=466, heightGrid=678)
+21:05:12.226 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Define variables RUNNING
+21:05:12.227 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Define variables COMPLETED
+21:05:12.228 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Apply configuration RUNNING
+21:05:12.228 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Apply configuration COMPLETED
+21:05:12.228 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Launch app "dev.maestro.swipewaitfixture" (launch arguments: {mode=moving}) RUNNING
+21:05:12.229 [ INFO] device.SimctlIOSDevice.setPermissions: [Start] Setting permissions all=allow through applesimutils
+21:05:12.230 [ INFO] util.LocalSimulatorUtils.setAppleSimutilsPermissions: [Start] Setting permissions via pinned applesimutils
+21:05:12.230 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [<JAVA_USER_CACHE_MOVING>/.maestro/deps/applesimutils, --byId, <SIMULATOR_UUID>, --bundle, dev.maestro.swipewaitfixture, --setPermissions, calendar=YES,camera=YES,contacts=YES,faceid=YES,homekit=YES,medialibrary=YES,microphone=YES,motion=YES,photos=YES,reminders=YES,siri=YES,speech=YES,userTracking=YES] with {}
+21:05:12.520 [ INFO] util.LocalSimulatorUtils.setAppleSimutilsPermissions: [Done] Setting permissions pinned applesimutils
+21:05:12.520 [ INFO] device.SimctlIOSDevice.setPermissions: [Done] Setting permissions through applesimutils
+21:05:12.521 [ INFO] device.SimctlIOSDevice.setPermissions: [Start] Setting Permissions all=allow through simctl
+21:05:12.521 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [xcrun, simctl, privacy, <SIMULATOR_UUID>, grant, location-always, dev.maestro.swipewaitfixture] with {}
+21:05:12.681 [ INFO] device.SimctlIOSDevice.setPermissions: [Done] Setting Permissions all=allow through simctl
+21:05:12.728 [ INFO] maestro.Maestro.launchApp$lambda$5: Launching app dev.maestro.swipewaitfixture
+21:05:12.728 [ INFO] maestro.Maestro.launchApp$lambda$5: Stopping dev.maestro.swipewaitfixture app during launch
+21:05:12.746 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [xcrun, simctl, launch, <SIMULATOR_UUID>, dev.maestro.swipewaitfixture, -mode, moving] with {}
+21:05:12.948 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Launch app "dev.maestro.swipewaitfixture" (launch arguments: {mode=moving}) COMPLETED
+21:05:12.949 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that id: repro-ready is visible RUNNING
+21:05:16.585 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that id: repro-ready is visible COMPLETED
+21:05:16.585 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that id: repro-scrolled is not visible RUNNING
+21:05:17.537 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that id: repro-scrolled is not visible COMPLETED
+21:05:17.539 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Swipe from (50%, 75%) to (50%, 35%) in 700 ms RUNNING
+21:05:17.565 [ INFO] device.IOSDevice.invoke-F9mIFpk: Waiting for animation to end with timeout 3000
+21:05:26.676 [ INFO] device.IOSDevice.invoke-F9mIFpk: Waiting for animation to end with timeout 3000
+21:05:30.426 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Swipe from (50%, 75%) to (50%, 35%) in 700 ms COMPLETED
+21:05:30.426 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that id: repro-scrolled is visible RUNNING
+21:05:30.659 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that id: repro-scrolled is visible COMPLETED
+21:05:30.660 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandStart: Assert that id: repro-ready is visible RUNNING
+21:05:30.897 [ INFO] maestro.cli.runner.CliConsoleListener.onCommandFinished: Assert that id: repro-ready is visible COMPLETED
+21:05:31.165 [ INFO] xcuitest.crash.IOSCrashFileFinder.findCrashFile: Crash detection: crashFile=none, totalForBundle=0, bundleId=dev.maestro.swipewaitfixture
+21:05:31.242 [ INFO] maestro.cli.report.TestDebugReporter.deleteOldFiles: Performing purge of logs older than 14 days from <REPRO_ROOT>/logs/moving-odk6532v/debug/.maestro/tests

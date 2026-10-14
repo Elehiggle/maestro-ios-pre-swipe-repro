@@ -1,0 +1,9 @@
+{"wall":1792004645.6167951,"uptime":15427.649975166667,"event":"ready","mode":"bare"}
+{"event":"frames","maxIntervalMs":44.146708332846174,"uptime":15428.817176291668,"wall":1792004646.7840018}
+{"wall":1792004647.784023,"event":"frames","uptime":15429.817189416668,"maxIntervalMs":16.666666668243124}
+{"dispatchLagMs":13.952583334685187,"event":"touchBegan","wall":1792004648.169189,"uptime":15430.20235225,"eventUptime":15430.188391958332}
+{"offset":0,"uptime":15430.268300333335,"wall":1792004648.235137,"event":"scrollBegin"}
+{"offset":10.666666666666666,"uptime":15430.300841666667,"wall":1792004648.267679,"event":"scrolled"}
+{"maxIntervalMs":16.666666668243124,"uptime":15430.834170541668,"wall":1792004648.8010111,"event":"frames"}
+{"event":"frames","maxIntervalMs":16.666666668243124,"uptime":15431.833920208333,"wall":1792004649.8007669}
+{"uptime":15432.833857166668,"event":"frames","wall":1792004650.800709,"maxIntervalMs":16.666666668243124}

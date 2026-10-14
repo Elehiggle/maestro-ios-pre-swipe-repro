@@ -1,0 +1,162 @@
+{
+  "startedAtUTC": "2026-10-14T19:02:38.926263+00:00",
+  "deviceName": "Maestro Pre-swipe Repro 20261014",
+  "deviceType": "com.apple.CoreSimulator.SimDeviceType.iPhone-Duo",
+  "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-27-1",
+  "ports": [
+    23147,
+    23148
+  ],
+  "officialReleaseReceiptSha256": "91fb5e27231df54999e371d58d9d258e500f393f9cee81147f6080db17b5e9ad",
+  "noAccountsOrBackend": true,
+  "measurements": [
+    {
+      "mode": "bare",
+      "command": [
+        "python3",
+        "<REPRO_ROOT>/run.py",
+        "--udid",
+        "<SIMULATOR_UUID>",
+        "--mode",
+        "bare",
+        "--maestro",
+        "<MAESTRO_2_11_0_ROOT>/bin/maestro",
+        "--port",
+        "23147"
+      ],
+      "captureCommand": [
+        "xcrun",
+        "simctl",
+        "spawn",
+        "<SIMULATOR_UUID>",
+        "log",
+        "stream",
+        "--style",
+        "compact",
+        "--level",
+        "debug",
+        "--predicate",
+        "process == \"maestro-driver-iosUITests-Runner\""
+      ],
+      "captureStartWall": 1792004611.3939788,
+      "hostLoadBefore": [
+        314.1552734375,
+        185.78173828125,
+        114.6748046875
+      ],
+      "nativeOwner": {
+        "pid": 55553,
+        "executable": "<USER_HOME>/Library/Developer/CoreSimulator/Devices/<SIMULATOR_UUID>/data/Containers/Bundle/Application/<LOCAL_INSTALL_UUID_1>/maestro-driver-iosUITests-Runner.app/maestro-driver-iosUITests-Runner",
+        "sha256": "be0619b1e43124ef40de6d42b8149ecb503be2fffda08f13323efbac3e65c597",
+        "deviceUDID": "<SIMULATOR_UUID>",
+        "port": 23147,
+        "observedWall": 1792004642.693318
+      },
+      "wrapperExitCode": 0,
+      "screenshotPixels": [
+        1398,
+        2034
+      ],
+      "captureExitCode": 143,
+      "captureEndWall": 1792004653.359704,
+      "hostLoadAfter": [
+        460.5546875,
+        238.54736328125,
+        137.2119140625
+      ],
+      "deviceInfo": [
+        1398,
+        2034,
+        466,
+        678
+      ],
+      "flowTimedOut": false
+    },
+    {
+      "mode": "moving",
+      "command": [
+        "python3",
+        "<REPRO_ROOT>/run.py",
+        "--udid",
+        "<SIMULATOR_UUID>",
+        "--mode",
+        "moving",
+        "--maestro",
+        "<MAESTRO_2_11_0_ROOT>/bin/maestro",
+        "--port",
+        "23148"
+      ],
+      "captureCommand": [
+        "xcrun",
+        "simctl",
+        "spawn",
+        "<SIMULATOR_UUID>",
+        "log",
+        "stream",
+        "--style",
+        "compact",
+        "--level",
+        "debug",
+        "--predicate",
+        "process == \"maestro-driver-iosUITests-Runner\""
+      ],
+      "captureStartWall": 1792004653.643342,
+      "hostLoadBefore": [
+        460.5546875,
+        238.54736328125,
+        137.2119140625
+      ],
+      "nativeOwner": {
+        "pid": 56477,
+        "executable": "<USER_HOME>/Library/Developer/CoreSimulator/Devices/<SIMULATOR_UUID>/data/Containers/Bundle/Application/<LOCAL_INSTALL_UUID_2>/maestro-driver-iosUITests-Runner.app/maestro-driver-iosUITests-Runner",
+        "sha256": "be0619b1e43124ef40de6d42b8149ecb503be2fffda08f13323efbac3e65c597",
+        "deviceUDID": "<SIMULATOR_UUID>",
+        "port": 23148,
+        "observedWall": 1792004712.302944
+      },
+      "wrapperExitCode": 0,
+      "screenshotPixels": [
+        1398,
+        2034
+      ],
+      "captureExitCode": 143,
+      "captureEndWall": 1792004734.121682,
+      "hostLoadAfter": [
+        529.00390625,
+        315.96435546875,
+        176.10400390625
+      ],
+      "deviceInfo": [
+        1398,
+        2034,
+        466,
+        678
+      ],
+      "flowTimedOut": false
+    }
+  ],
+  "complete": true,
+  "createdDeviceUDID": "<SIMULATOR_UUID>",
+  "initialScreenshotPixels": [
+    1398,
+    2034
+  ],
+  "environment": {
+    "macOS": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434",
+    "xcode": "Xcode 27.1\nBuild version 27A9269",
+    "java": "openjdk version \"17.0.19\" 2026-04-21\nOpenJDK Runtime Environment Homebrew (build 17.0.19+0)\nOpenJDK 64-Bit Server VM Homebrew (build 17.0.19+0, mixed mode, sharing)",
+    "hostLoadBefore": [
+      239.45263671875,
+      165.623046875,
+      106.44775390625
+    ],
+    "developerDirectory": "/Applications/Xcode-27.1-beta.app/Contents/Developer",
+    "measurementObserver": "One native log stream; host lsof lookup once per second until native ownership is proved."
+  },
+  "endedAtUTC": "2026-10-14T19:05:34.292880+00:00",
+  "hostLoadAfter": [
+    529.00390625,
+    315.96435546875,
+    176.10400390625
+  ]
+}
