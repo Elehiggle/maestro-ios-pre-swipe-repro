@@ -1,19 +1,17 @@
-appId: dev.maestro.swipewaitfixture
+appId: dev.maestro.swipewaitminimal
 ---
 - launchApp:
     stopApp: true
     arguments:
-      mode: bare
+      mode: static
 - assertVisible:
-    id: repro-ready
+    id: repro-first-row
 - assertNotVisible:
-    id: repro-scrolled
+    id: repro-second-row
 - swipe:
     start: 50%, 75%
     end: 50%, 35%
     duration: 700
     waitToSettleTimeoutMs: 500
 - assertVisible:
-    id: repro-scrolled
-- assertVisible:
-    id: repro-ready
+    id: repro-second-row

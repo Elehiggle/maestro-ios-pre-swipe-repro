@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testsuites>
-  <testsuite name="Test Suite" device="Maestro Pre-swipe Repro 20261014 - iOS 27.1 - <SIMULATOR_UUID>" tests="1" failures="0" time="19.251" timestamp="2026-10-14T21:05:11">
-    <testcase id="moving" name="moving" classname="moving" file="flows/moving.yaml" time="19.243" timestamp="2026-10-14T21:05:11" status="SUCCESS"/>
-  </testsuite>
-</testsuites>

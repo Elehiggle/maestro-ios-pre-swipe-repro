@@ -1,33 +1,49 @@
-# iOS moving-view swipe reproduction
+# Minimal iOS pre-swipe comparison
 
-`bare` displays a static scroll view; `moving` adds an accessible thumb moving at 6 pt/s to the same view. Its label and identifier stay fixed. Maestro makes eleven pre-swipe hierarchy queries in `moving` and none in `bare`; both controls scroll successfully. [Measured results and complete evidence](RESULTS.md) use stock Maestro 2.11.0 and equal screen geometry.
+A plain UIKit scroll view and an accessible blue dot. Both modes have the same
+views, labels, identifiers, and display link. In `moving`, the dot moves at
+6 pt/s, reversing every 30 seconds without jumping. In `static`, it stays still.
+The dot stays outside the scroll view; content changes only when scrolled.
 
-## Clone, build and run
+The two flows differ only in `mode`. Each checks that the second content row is
+offscreen, performs one swipe, and checks that the row becomes visible. The
+500 ms setting controls best-effort settling after the swipe.
 
-Use macOS, Python 3, full Xcode with an iOS Simulator SDK, Java, and stock Maestro 2.11.0:
+## Build and install
 
-```sh
-git clone https://github.com/Elehiggle/maestro-ios-pre-swipe-repro.git
-cd maestro-ios-pre-swipe-repro
-python3 build.py --sdk iphonesimulator
-```
-
-Choose a dedicated booted iOS simulator. Replace `SIMULATOR_UUID` and `FREE_PORT`, keep the same display state/orientation, and use a free port for each run:
-
-```sh
-python3 run.py --udid SIMULATOR_UUID --mode bare --port FREE_PORT
-python3 run.py --udid SIMULATOR_UUID --mode moving --port FREE_PORT
-```
-
-`--maestro PATH` selects an isolated stock CLI. The helper installs only `dev.maestro.swipewaitfixture`, locks the selected simulator during its run, checks the build hash, and keeps logs/receipts under `logs/`.
-
-Each flow makes one 700 ms swipe and checks actual scroll offset. The helper's 180-second watchdog covers the whole Maestro invocation; the flow's 500 ms option concerns best-effort waiting after the swipe.
-
-For complete native request evidence, start a separate capture before each mode and stop it after the run:
+Requires macOS, Xcode and Maestro 2.11.0. Run from this directory with an iPhone
+17 Pro simulator on iOS 26.2, matching [Maestro's own test configuration](https://github.com/mobile-dev-inc/Maestro/blob/cli-2.11.0/.github/workflows/test-e2e.yaml#L490-L491).
+Keep Maestro's default animations-enabled behavior.
 
 ```sh
-xcrun simctl spawn SIMULATOR_UUID log stream --style compact --level debug \
-  --predicate 'process == "maestro-driver-iosUITests-Runner"' > native-stream.log 2>&1
+SDK="$(xcrun --sdk iphonesimulator --show-sdk-path)"
+ARCH="$(uname -m)"
+APP="$PWD/build/SwipeWaitMinimal.app"
+mkdir -p "$APP" "$PWD/build/ModuleCache"
+xcrun swiftc -sdk "$SDK" -target "$ARCH-apple-ios15.0-simulator" \
+  -module-cache-path "$PWD/build/ModuleCache" source/main.swift \
+  -o "$APP/SwipeWaitMinimal"
+cp source/Info.plist "$APP/Info.plist"
+codesign --force --sign - "$APP"
+xcrun simctl list devices available
 ```
 
-Copy app events before another launch resets them. Compare only equal native pixel/grid dimensions. Query counts and dispatch events establish behavior; elapsed time depends on the host/runtime. [Issue draft](issue.md), [results](RESULTS.md), [public evidence redaction](evidence/REDACTION.md), and `MANIFEST.json` describe the included pair.
+Replace the UUID below with a dedicated, booted iPhone simulator. Commands use
+the selected Xcode installation; set `DEVELOPER_DIR` first if needed.
+
+```sh
+UDID="REPLACE_WITH_SIMULATOR_UUID"
+xcrun simctl install "$UDID" "$APP"
+maestro --udid "$UDID" test flows/static.yaml
+maestro --udid "$UDID" test flows/moving.yaml
+```
+
+To inspect each mode manually:
+
+```sh
+xcrun simctl terminate "$UDID" dev.maestro.swipewaitminimal
+xcrun simctl launch "$UDID" dev.maestro.swipewaitminimal -mode static
+xcrun simctl terminate "$UDID" dev.maestro.swipewaitminimal
+xcrun simctl launch "$UDID" dev.maestro.swipewaitminimal -mode moving
+```
+
